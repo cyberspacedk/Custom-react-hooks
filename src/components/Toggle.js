@@ -1,17 +1,14 @@
-import React, {useState} from 'react'
-import {useToggle} from '../hooks/useToggle'
+import React from 'react'
+import {useToggle} from '../hooks/useToggle';
+
 export const Toggle = () => {
 
-  const [isToggled, setIsToggled] = useState(false);
-
-  const handleToggle = ()=> setIsToggled(prev=> !prev);
-  const greet = useToggle();
+  const {isToggled, toggleHandler} = useToggle(false); 
 
   return (
     <div>
-      <button onClick={handleToggle}>Toggle</button>
-      {isToggled && <p>To be toggled</p>} 
-      {greet}
+      <button onClick={toggleHandler}>Toggle</button>
+      {isToggled && <p>To be toggled</p>}  
     </div>
   )
 }

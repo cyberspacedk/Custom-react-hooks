@@ -1,6 +1,9 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 
-export const useToggle = () => {
+export const useToggle = (initial) => {
+  const [isToggled, setIsToggled] = useState(initial);
 
-  return "Hello"
+  const toggleHandler = ()=> setIsToggled(prev=>!prev);
+
+  return {isToggled, toggleHandler}
 }
