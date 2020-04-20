@@ -12,7 +12,7 @@ import {Toggle} from './components/Toggle';
 import {Increment} from './components/Increment'
 import {Mount} from './components/Mount';
 import {Hover} from './components/Hover'
-import {Nav} from './components/Nav' 
+import {NavWrapper} from './components/Nav' 
 import {Cookie} from './components/Cookie'
 import {PageProvider} from './state';
 
@@ -26,7 +26,7 @@ function App() {
           <h1>Header</h1>
         </Header>
 
-        <Nav />
+        <NavWrapper />
 
         <Container>
           {/* hooks playground */}

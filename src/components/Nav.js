@@ -1,11 +1,21 @@
 import React from 'react';
 
 import {useAppState} from '../state';
+import {useScrollFreeze} from '../hooks';
 
-export const Nav = () => {
-
-  const {isMenuOpen, toggleMenu} = useAppState();
+// Wrapper need for handling freeze state
+// when component Nav unmounts freeze is disbled 
+export const NavWrapper = ()=> {
+  const {isMenuOpen} = useAppState();
   if(!isMenuOpen) return null;
+  return <Nav />
+}
+
+const Nav = () => { 
+  const {toggleMenu} = useAppState();
+
+  // call freeze scroll
+  useScrollFreeze(); 
 
   return (
     <nav style={{
