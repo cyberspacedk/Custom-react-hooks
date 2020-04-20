@@ -1,5 +1,5 @@
 import React from 'react'
-import {useIncrement} from '../hooks/useIncrement';
+import {useIncrement} from '../hooks';
 
 export const Increment = () => {
   const [value,{ incHandler, decHandler, reset}] = useIncrement({

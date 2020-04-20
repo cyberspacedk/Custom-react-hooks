@@ -2,11 +2,10 @@ import React from 'react'
 import { Card} from "../Elements";
 import black from "../black.png";
 
-import {useHover} from '../hooks/useHover';
+import {useHover} from '../hooks';
 
 export const Hover = () => {
-  const [isHovered, bind] = useHover();
-  console.log("➡️: Hover -> isHovered", isHovered)
+  const [isHovered, bind] = useHover(); 
   
   return (
     <div>

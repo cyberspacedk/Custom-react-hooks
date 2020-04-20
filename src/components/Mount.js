@@ -1,7 +1,6 @@
 import React from 'react';
-
-import {useToggle} from '../hooks/useToggle'
-import {useMount, useUnmount} from '../hooks/useMount'
+ 
+import {useToggle, useMount, useUnmount} from '../hooks'
 
 export const Mount = () => {
   const {isToggled, toggleHandler} = useToggle();

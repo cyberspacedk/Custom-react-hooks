@@ -12,41 +12,51 @@ import {Toggle} from './components/Toggle';
 import {Increment} from './components/Increment'
 import {Mount} from './components/Mount';
 import {Hover} from './components/Hover'
+import {Nav} from './components/Nav' 
+import {PageProvider} from './state';
 
 function App() {
   return (
-    <div>
-      <Header>
-        <Menu />
-        <h1>Header</h1>
-      </Header>
-      <Container>
-        <h2>Super Cool</h2>
-        <Toggle />
-        <Increment />
-        <Mount />
-        <Hover />
+    <PageProvider>
+      <div>
+        <Header>
+          <Menu />
+          <h1>Header</h1>
+        </Header>
 
-        <CardGrid>
-          <Card style={{ background: "var(--purp)" }}>
-            <h3>Some card</h3>
-            <img src={purp} />
-          </Card>
-          <Card style={{ background: "var(--blue)" }}>
-            <h3>Some card</h3>
-            <img src={blue} />
-          </Card>
-          <Card style={{ background: "var(--black)" }}>
-            <h3>Some card</h3>
-            <img src={black} />
-          </Card>
-          <Card style={{ background: "var(--green)" }}>
-            <h3>Some card</h3>
-            <img src={green} />
-          </Card>
-        </CardGrid>
-      </Container>
-    </div>
+        <Nav />
+
+        <Container>
+          {/* hooks playground */}
+          <h2>Super Cool</h2>
+          <Toggle />
+          <Increment />
+          <Mount />
+          <Hover />
+          {/* end */}
+          
+          <CardGrid>
+            <Card style={{ background: "var(--purp)" }}>
+              <h3>Some card</h3>
+              <img src={purp} alt="pic"/>
+            </Card>
+            <Card style={{ background: "var(--blue)" }}>
+              <h3>Some card</h3>
+              <img src={blue} alt="pic"/>
+            </Card>
+            <Card style={{ background: "var(--black)" }}>
+              <h3>Some card</h3>
+              <img src={black} alt="pic"/>
+            </Card>
+            <Card style={{ background: "var(--green)" }}>
+              <h3>Some card</h3>
+              <img src={green} alt="pic"/>
+            </Card>
+          </CardGrid>
+
+        </Container>
+      </div>
+    </PageProvider>
   );
 }
 
