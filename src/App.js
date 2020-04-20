@@ -13,7 +13,9 @@ import {Increment} from './components/Increment'
 import {Mount} from './components/Mount';
 import {Hover} from './components/Hover'
 import {Nav} from './components/Nav' 
+import {Cookie} from './components/Cookie'
 import {PageProvider} from './state';
+
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
           <Toggle />
           <Increment />
           <Mount />
+          <Cookie />
           <Hover />
           {/* end */}
           
