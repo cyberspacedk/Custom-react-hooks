@@ -11,9 +11,10 @@ import green from "./green.png";
 import {Toggle} from './components/Toggle';
 import {Increment} from './components/Increment'
 import {Mount} from './components/Mount';
-import {Hover} from './components/Hover'
-import {NavWrapper} from './components/Nav' 
-import {Cookie} from './components/Cookie'
+import {Hover} from './components/Hover';
+import {NavWrapper} from './components/Nav'; 
+import {Cookie} from './components/Cookie';
+import {Script} from './components/Script';
 import {PageProvider} from './state';
 
 
@@ -36,6 +37,7 @@ function App() {
           <Mount />
           <Cookie />
           <Hover />
+          <Script />
           {/* end */}
           
           <CardGrid>

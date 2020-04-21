@@ -5,9 +5,11 @@ import black from "../black.png";
 import {useHover, useWindowWidth, useMeasure} from '../hooks';
 
 export const Hover = () => {
+  // get hovering state and event handlers
   const [isHovered, bind] = useHover(); 
-  const [ref, bounds] = useMeasure();
-  console.log("➡️: Element bounds", bounds)
+
+  // get element bounds
+  const [ref, bounds] = useMeasure(); 
   
   // get actual width
   const width = useWindowWidth(); 
@@ -23,3 +25,4 @@ export const Hover = () => {
     </div>
   )
 }
+ 
