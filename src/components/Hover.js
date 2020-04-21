@@ -2,7 +2,7 @@ import React from 'react'
 import { Card} from "../Elements";
 import black from "../black.png";
 
-import {useHover, useWindowWidth, useMeasure} from '../hooks';
+import {useHover, useWindowWidth, useMeasure} from '@hooks';
 
 export const Hover = () => {
   // get hovering state and event handlers

@@ -1,5 +1,5 @@
 import React from 'react'
-import {useScript} from '../hooks';
+import {useScript} from '@hooks';
 
 export const Script = () => {
   const reCaptcha = 'https://www.google.com/recaptcha/api.js';

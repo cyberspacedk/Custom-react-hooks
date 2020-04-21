@@ -1,5 +1,5 @@
 import React from 'react'
-import {useToggle} from '../hooks';
+import {useToggle} from '@hooks';
 
 export const Toggle = () => {
 

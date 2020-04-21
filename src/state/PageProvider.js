@@ -1,5 +1,5 @@
 import React, {createContext, useContext} from 'react'
-import {useToggle} from '../hooks'
+import {useToggle} from '@hooks'
 
 // Create ctx
 export const AppContext = createContext({ isMenuOpen: false})

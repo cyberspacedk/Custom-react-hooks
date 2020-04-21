@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {useTheme} from '../hooks';
+import {useTheme} from '@hooks';
 
 export const Theme = () => {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {useAppState} from '../state';
-import {useScrollFreeze} from '../hooks';
+import {useScrollFreeze} from '@hooks';
 
 // Wrapper need for handling freeze state
 // when component Nav unmounts freeze is disbled 
