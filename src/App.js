@@ -16,6 +16,7 @@ import {NavWrapper} from './components/Nav';
 import {Cookie} from './components/Cookie';
 import {LocalStorage} from './components/LocalStorage'
 import {Script} from './components/Script';
+import {Theme} from './components/Theme';
 import {PageProvider} from './state';
 
 
@@ -33,6 +34,7 @@ function App() {
         <Container>
           {/* hooks playground */}
           <h2>Super Cool</h2>
+          <Theme />
           <Toggle />
           <Increment />
           <Mount />
