@@ -14,6 +14,7 @@ import {Mount} from './components/Mount';
 import {Hover} from './components/Hover';
 import {NavWrapper} from './components/Nav'; 
 import {Cookie} from './components/Cookie';
+import {LocalStorage} from './components/LocalStorage'
 import {Script} from './components/Script';
 import {PageProvider} from './state';
 
@@ -36,6 +37,7 @@ function App() {
           <Increment />
           <Mount />
           <Cookie />
+          <LocalStorage />
           <Hover />
           <Script />
           {/* end */}

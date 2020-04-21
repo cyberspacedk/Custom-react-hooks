@@ -4,8 +4,7 @@ import { useCookies } from '../hooks';
 
 export const Cookie = () => {
 
-  const [cookie, setStateCookie] = useCookies( 'test' );
-  console.log("➡️: Cookie -> cookie", cookie)
+  const [cookie, setStateCookie] = useCookies( 'test' ); 
 
   const setCookieHandler = ({target: {value}})=>  setStateCookie(value);
  
