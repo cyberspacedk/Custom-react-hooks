@@ -9,3 +9,4 @@ export * from './useMeasure';
 export * from './useScript';
 export * from './useLocalStorage';
 export * from './useTheme';
+export * from './useInputValue';
